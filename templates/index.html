@@ -11,6 +11,19 @@
         <form method="post">
             <label for="number">数値を入力してください:</label>
             <input type="text" id="number" name="number">
+            <div class="keypad">
+                <button type="button" class="key" data-value="1">1</button>
+                <button type="button" class="key" data-value="2">2</button>
+                <button type="button" class="key" data-value="3">3</button>
+                <button type="button" class="key" data-value="4">4</button>
+                <button type="button" class="key" data-value="5">5</button>
+                <button type="button" class="key" data-value="6">6</button>
+                <button type="button" class="key" data-value="7">7</button>
+                <button type="button" class="key" data-value="8">8</button>
+                <button type="button" class="key" data-value="9">9</button>
+                <button type="button" class="key" data-value="0">0</button>
+                <button type="button" class="key clear">C</button>    
+            </div>        
             <input type="submit" value="判定">
         </form>
         {% if result is not none %}

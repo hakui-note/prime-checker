@@ -52,6 +52,37 @@ input[type="submit"]:hover {
   background-color: #0056b3;
 }
 
+.keypad {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+  margin-bottom: 20px;
+}
+
+.key {
+  padding: 20px;
+  margin: 5px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 60px;
+  text-align: center;
+}
+
+.key:hover {
+  background-color: #0056b3;
+}
+
+.key.clear {
+  background-color: #FF5733;
+}
+
+.key.clear:hover {
+  background-color: #C70039;
+}
+
 h2 {
   margin-top: 20px;
 }
