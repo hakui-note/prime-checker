@@ -13,10 +13,14 @@
             <input type="text" id="number" name="number">
             <input type="submit" value="判定">
         </form>
+
         {% if result is not none %}
-            <h2>{{ number }} は {{ result }} </h2>
+            <h2>{{ number }} は {{ result }}</h2>
+            {% if factors %}
+                <p>素因数分解の結果: {{ factors|join(' × ') }}</p>
+            {% endif %}
         {% endif %}
     </div>
-    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 </body>
 </html>
+
